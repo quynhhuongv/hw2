@@ -170,15 +170,99 @@ tom = Actor.find_by({ "name" => "Tom Hardy" })
 joseph = Actor.find_by({ "name" => "Joseph Gordon-Levitt" })
 anne = Actor.find_by({ "name" => "Anne Hathaway" })
 
-begins = Movie.find_by({ "name" => "Batman Begins" })
-knight = Movie.find_by({ "name" => "The Dark Knight" })
-rises = Movie.find_by({ "name" => "The Dark Knight Rises" })
+begins = Movie.find_by({ "title" => "Batman Begins" })
+knight = Movie.find_by({ "title" => "The Dark Knight" })
+rises = Movie.find_by({ "title" => "The Dark Knight Rises" })
 
 starring_1 = Starring.new
 starring_1["actor_id"] =  christian["id"]
-starring_1["movie_id"] =  ["id"]
-starring_1["character"] = "PG-13"
+starring_1["movie_id"] =  begins["id"]
+starring_1["character"] = "Bruce Wayne"
 starring_1.save
+
+starring_2 = Starring.new
+starring_2["actor_id"] =  michael["id"]
+starring_2["movie_id"] =  begins["id"]
+starring_2["character"] = "Alfred"
+starring_2.save
+
+starring_3 = Starring.new
+starring_3["actor_id"] =  liam["id"]
+starring_3["movie_id"] =  begins["id"]
+starring_3["character"] = "Ra's Al Ghul"
+starring_3.save
+
+starring_4 = Starring.new
+starring_4["actor_id"] =  katie["id"]
+starring_4["movie_id"] =  begins["id"]
+starring_4["character"] = "Rachel Dawes"
+starring_4.save
+
+starring_5 = Starring.new
+starring_5["actor_id"] =  gary["id"]
+starring_5["movie_id"] =  begins["id"]
+starring_5["character"] = "Commissioner Gordon"
+starring_5.save
+
+starring_6 = Starring.new
+starring_6["actor_id"] =  christian["id"]
+starring_6["movie_id"] =  knight["id"]
+starring_6["character"] = "Bruce Wayne"
+starring_6.save
+
+starring_7 = Starring.new
+starring_7["actor_id"] =  heath["id"]
+starring_7["movie_id"] =  knight["id"]
+starring_7["character"] = "Joker"
+starring_7.save
+
+starring_8 = Starring.new
+starring_8["actor_id"] =  aaron["id"]
+starring_8["movie_id"] =  knight["id"]
+starring_8["character"] = "Harvey Dent"
+starring_8.save
+
+starring_9 = Starring.new
+starring_9["actor_id"] =  michael["id"]
+starring_9["movie_id"] =  knight["id"]
+starring_9["character"] = "Alfred"
+starring_9.save
+
+starring_10 = Starring.new
+starring_10["actor_id"] =  maggie["id"]
+starring_10["movie_id"] =  knight["id"]
+starring_10["character"] = "Rachel Dawes"
+starring_10.save
+
+starring_11 = Starring.new
+starring_11["actor_id"] =  christian["id"]
+starring_11["movie_id"] =  rises["id"]
+starring_11["character"] = "Bruce Wayne"
+starring_11.save
+
+starring_12 = Starring.new
+starring_12["actor_id"] =  gary["id"]
+starring_12["movie_id"] =  rises["id"]
+starring_12["character"] = "Commissioner Gordon"
+starring_12.save
+
+starring_13 = Starring.new
+starring_13["actor_id"] =  tom["id"]
+starring_13["movie_id"] =  rises["id"]
+starring_13["character"] = "Bane"
+starring_13.save
+
+starring_14 = Starring.new
+starring_14["actor_id"] =  joseph["id"]
+starring_14["movie_id"] =  rises["id"]
+starring_14["character"] = "John Blake"
+starring_14.save
+
+starring_15 = Starring.new
+starring_15["actor_id"] =  anne["id"]
+starring_15["movie_id"] =  rises["id"]
+starring_15["character"] = "Selina Kyle"
+starring_15.save
 
 # Prints a header for the movies output
 puts "Movies"
