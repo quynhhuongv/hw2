@@ -272,6 +272,7 @@ puts ""
 # Query the movies data and loop through the results to display the movies output.
 # TODO!
 
+
 # Prints a header for the cast output
 puts ""
 puts "Top Cast"
