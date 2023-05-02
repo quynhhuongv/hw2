@@ -87,6 +87,14 @@ Starring.destroy_all
 # Insert data into the database that reflects the sample data shown above.
 # Do not use hard-coded foreign key IDs.
 # TODO!
+studio_1 = Studio.new
+studio_1["studio_id"] = "Warner Bros"
+studio_1.save
+
+actor_1 = Actor.new
+actor_1["actor_id"] = "Christian Bale"
+actor_1.save
+
 
 
 # Prints a header for the movies output
