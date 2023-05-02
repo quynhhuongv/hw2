@@ -158,6 +158,24 @@ movie_3["mpaa_rating"] = "PG-13"
 movie_3["studio_id"] = warner["id"]
 movie_3.save
 
+christian = Actor.find_by({ "name" => "Christian Bale" })
+michael = Actor.find_by({ "name" => "Michael Caine" })
+liam = Actor.find_by({ "name" => "Liam Neeson" })
+katie = Actor.find_by({ "name" => "Katie Holmes" })
+gary = Actor.find_by({ "name" => "Gary Oldman" })
+heath = Actor.find_by({ "name" => "Heath Ledger" })
+aaron = Actor.find_by({ "name" => "Aaron Eckhart" })
+maggie = Actor.find_by({ "name" => "Maggie Gyllenhaal" })
+tom = Actor.find_by({ "name" => "Tom Hardy" })
+joseph = Actor.find_by({ "name" => "Joseph Gordon-Levitt" })
+anne = Actor.find_by({ "name" => "Anne Hathaway" })
+
+starring_1 = Starring.new
+starring_1["actor_id"] = "The Dark Knight Rises"
+starring_1["movie_id"] = "2012"
+starring_1["character"] = "PG-13"
+starring_1.save
+
 # Prints a header for the movies output
 puts "Movies"
 puts "======"
