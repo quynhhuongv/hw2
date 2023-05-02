@@ -170,9 +170,13 @@ tom = Actor.find_by({ "name" => "Tom Hardy" })
 joseph = Actor.find_by({ "name" => "Joseph Gordon-Levitt" })
 anne = Actor.find_by({ "name" => "Anne Hathaway" })
 
+begins = Movie.find_by({ "name" => "Batman Begins" })
+knight = Movie.find_by({ "name" => "The Dark Knight" })
+rises = Movie.find_by({ "name" => "The Dark Knight Rises" })
+
 starring_1 = Starring.new
-starring_1["actor_id"] = "The Dark Knight Rises"
-starring_1["movie_id"] = "2012"
+starring_1["actor_id"] =  christian["id"]
+starring_1["movie_id"] =  ["id"]
 starring_1["character"] = "PG-13"
 starring_1.save
 
