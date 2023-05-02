@@ -271,7 +271,15 @@ puts ""
 
 # Query the movies data and loop through the results to display the movies output.
 # TODO!
+movie = Movies.all
 
+for movie in Movies
+    title = movie["title"]
+    year = movie["year"]
+    mpaa_rating = movie["mpaa_rating"]
+    studio = Studio.find_by({"id" => movie["studio_id"]})
+    puts "#{title} #{year} #{mpaa_rating} - #{studio}"
+end
 
 # Prints a header for the cast output
 puts ""
